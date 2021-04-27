@@ -1,0 +1,23 @@
+﻿@ViewBag.Messeng.Name  @ViewBag.Messeng.SurName : <br /> <hr />
+@ViewBag.Messeng.Messeng <br /> <hr />
+
+Почта: @ViewBag.Messeng.Email <br/> <hr />
+<form action="/Account/Editing" method="post">
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Статус заявки:</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="Status">
+            <option>Не обработана</option>
+            <option>Обработана</option>
+        </select>
+    </div>
+    <div class="form-group"><hr />
+        <label for="exampleFormControlTextarea1">Заметка:</label>
+        <textarea name="Comment" style="resize:none;" wrap="hard" placeholder="Заметка" cols="10" maxlength="200" class="form-control" id="exampleFormControlTextarea1" rows="3">@ViewBag.Messeng.Comment</textarea>
+    </div>
+    <input type="hidden" name="Id" value="@ViewBag.Messeng.Id">
+    <input type="hidden" name="Name" value="@ViewBag.Messeng.Name">
+    <input type="hidden" name="SurName" value="@ViewBag.Messeng.SurName">
+    <input type="hidden" name="Email" value="@ViewBag.Messeng.Email">
+    <input type="hidden" name="Messeng" value="@ViewBag.Messeng.Messeng">
+    <button type="submit" class="btn btn-primary" style="margin-left:50%" > Сохранить</button>
+</form>

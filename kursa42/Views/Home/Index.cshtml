@@ -1,0 +1,238 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div style="background-color: rgba(52, 58, 64, 0.7); padding: 30px 30px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Image/8.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/111.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/222.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+
+
+
+
+
+
+    <h1 style="text-align:center; color:white; margin-top: 30px; margin-bottom:15px">СТАНЬ ЧАСТЬЮ КОМАНДЫ!</h1>
+    <form style=" width:800px; margin:0 auto;" action="/Home/Messeng" method="post">
+        <h3 style="text-align: center; color: white ">ПОДАТЬ ЗАЯВКУ</h3>
+        <div class="form-group">
+            <input style="height:60px" type="text" name="Name" class="form-control" placeholder="Имя" />
+        </div>
+        <div class="form-group">
+            <input style="height:60px" type="text" name="SurName" class="form-control" placeholder="Фамилия" />
+        </div>
+        <div class="form-group">
+            <input style="height:60px" type="text" name="Email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="form-group">
+            <textarea type="text" name="Messeng" style="resize:none; width:800px;" wrap="hard" placeholder="Сообщение" cols="10" maxlength="200" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <input type="hidden" name="Comment" value="" placeholder="Заметка">
+        <input type="hidden" name="Status" value="Не обработана" placeholder="Статус заявки">
+        <button style="margin-left:40%" class="btn btn-outline-warning">Отправить заявку</button>
+        <style>
+            body {
+                background: url(Image/fon1.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+    </form>
+    <h1 style="text-align:center; color:white; margin-top: 30px; margin-bottom:20px">СОСТАВ КОМАНДЫ</h1>
+    <div class="card-deck">
+        <div class="card">
+            <img src="/Image/monesy.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Илья «m0NESY» Осипов</h5>
+                <p class="card-text">
+                    Возраст: 15 лет <br />
+                    Роль: Снайпер <br />
+                    Состав: NAVI Junior <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/aunkere.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Женя «Aunkere» Карьят</h5>
+                <p class="card-text">
+                    Возраст: 20 лет <br />
+                    Роль: Рифлер | Снайпер <br />
+                    Состав: NAVI Junior <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/fear.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Родион «fear» Смык</h5>
+                <p class="card-text">
+                    Возраст: 20 лет <br />
+                    Роль: Капитан <br />
+                    Состав: NAVI Junior <br />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck" style="margin-top:25px">
+        <div class="card">
+            <img src="/Image/pogorelov.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Сергей «pogor3lov» Погорелов</h5>
+                <p class="card-text">
+                    Возраст: 16 лет <br />
+                    Роль: Рифлер <br />
+                    Состав: NAVI Junior <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/synex.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Даниил «Synyx» Мазур</h5>
+                <p class="card-text">
+                    Возраст: 16 лет <br />
+                    Роль: Рифлер <br />
+                    Состав: NAVI Junior <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/headtrik.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Даниил «headtr1ck» Валитов</h5>
+                <p class="card-text">
+                    Возраст: 16 лет <br />
+                    Роль: Снайпер <br />
+                    Состав: NAVI Youth <br />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align:center; color:white; margin-top: 30px; margin-bottom:20px">ОСНОВНОЙ СОСТАВ NAVI</h1>
+    <div class="card-deck">
+        <div class="card">
+            <img src="/Image/simple.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Александр «s1mple» Костылев</h5>
+                <p class="card-text">
+                    Возраст: 23 года <br />
+                    Роль: Снайпер <br />
+                    Состав: Natus Vincere <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/elec.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Денис «electronic» Шарипов</h5>
+                <p class="card-text">
+                    Возраст: 22 года <br />
+                    Роль: Рифлер <br />
+                    Состав: Natus Vincere <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/flamie.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Егор «flamie» Васильев</h5>
+                <p class="card-text">
+                    Возраст: 24 года <br />
+                    Роль: Рифлер <br />
+                    Состав: Natus Vincere <br />
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-deck" style="margin-top:25px">
+        <div class="card">
+            <img src="/Image/boom.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Кирилл «Boombl4» Михайлов</h5>
+                <p class="card-text">
+                    Возраст: 22 года <br />
+                    Роль: Капитан <br />
+                    Состав: Natus Vincere <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/perfecto.png" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Илья «Perfecto» Залутский</h5>
+                <p class="card-text">
+                    Возраст: 21 год <br />
+                    Роль: Рифлер <br />
+                    Состав: Natus Vincere <br />
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/Image/bit.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Валерий «b1t» Васильев</h5>
+                <p class="card-text">
+                    Возраст: 18 лет <br />
+                    Роль: Рифлер <br />
+                    Состав: Natus Vincere <br />
+                </p>
+            </div>
+        </div>
+    </div>
+    <h1 style="text-align:center; color:white; margin-top: 30px; margin-bottom:20px">СПОНСОРЫ</h1>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="margin-top:25px">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Image/anda.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/2323.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/3323.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/monstr.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/tinkoff.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/philips.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="/Image/logitech.png" class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>

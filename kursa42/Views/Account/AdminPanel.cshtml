@@ -1,0 +1,38 @@
+﻿@model IEnumerable<kursa42.Models.Soobshenie>
+
+<table class="table table-bordered table-dark">
+    <thead class="border-primary">
+        <tr>
+            <td scope="col">#</td>
+            <td scope="col">Имя</td>
+            <td scope="col">Фамилия</td>
+            <td scope="col">Email</td>
+            <td scope="col">Заметка</td>
+            <td scope="col">Статус заявки</td>
+            <td scope="col"></td>
+            <td scope="col"></td>
+        </tr>
+    </thead>
+    <tbody class="border-primary">
+        @{
+            int i = 1;
+        }
+        @foreach (var messeng in Model)
+        {
+        <tr>
+            <td scope="row">@i</td>
+            <td>@messeng.Name</td>
+            <td>@messeng.SurName</td>
+            <td>@messeng.Email</td>
+            <td>@messeng.Comment</td>
+            <td>@messeng.Status</td>
+            <td><a href="/Account/Editing/@messeng.Id" role="button" class="btn btn-warning" style="margin-left:10px">Редактировать</a></td>
+            <td><a href="/Account/Delete/@messeng.Id" role="button" class="btn btn-warning" style="margin-left:10px">Удалить</a></td>
+        </tr>
+            {
+                i = i + 1;
+            }
+        }
+    </tbody>
+
+</table>
